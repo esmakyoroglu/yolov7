@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Reklam Tespiti</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h2>Televizyon Akışındaki Reklamların Tespiti</h2>
+        </header>
+        <section>
+            <div class="yuvarlak"></div>
+            <div class="icerik">
+                <div class="metin">
+                    <h3><span>Yolov7</span><br>Reklam Tespiti</h3>
+                    <p>Televizyon kanallarındaki simgelerin reklama girdikten sonra farklı bir icon olarak yer aldığını gördüm. 
+                        Televizyon akışında gözlemdiğim bu değişiklikleri, video görüntülerden seçtiğim iconları roboflow 
+                        platformundan yararlanarak eğittim. Yolov7 ile nesne algılama modelini oluşturdum ardından DeepSort 
+                        algortimasını uygulayarak iconlar değiştiğinde iconlara atanan idlerin değişmesi sayesinde reklamların 
+                        ve televizyon kanallarındaki iconları tespitini gerçekleştirmeye çalıştım.</p>
+                </div>
+                <div class="egitimVideo">
+                    <video id="slider" src="/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp8/video1.mp4" type="video/mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <ul class="secenekler">
+                <li onclick="videoUrl('/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp8/video1.mp4')">1.Eğitim Videosu</li>
+                <li onclick="videoUrl('/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp7/video2.mp4')">2.Eğitim Videosu</li>
+                <li onclick="videoUrl('/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp9/tvAkisi1_1.mp4')">1.Reklam Tespiti</li>
+                <li onclick="videoUrl('/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp10/tvAkisi2.mp4')">2.Reklam Tespiti</li>
+                <li onclick="videoUrl('/Users/ecriniremkoroglu/Desktop/proje-3/yolov7/runs/detect/exp11/tvAkisi3.mp4')">3.Relam Tespiti</li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+             function videoUrl(url){
+                document.getElementById("slider").src=url;
+                slider.src = url;
+             }
+        </script>
+    </body>
+</html>

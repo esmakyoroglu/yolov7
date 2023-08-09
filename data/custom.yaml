@@ -1,0 +1,18 @@
+names:
+- kanald_icon
+- kanald_reklam_iconu
+- reklam_yazi
+- show_icon
+- show_reklam_iconu
+- star_icon
+- star_reklam-iconu
+nc: 7
+roboflow:
+  license: CC BY 4.0
+  project: tv_akisi
+  url: https://universe.roboflow.com/object-detection-mcn2f/tv_akisi/dataset/1
+  version: 1
+  workspace: object-detection-mcn2f
+test: ../test/images
+train: tv_akisi-1/train/images
+val: tv_akisi-1/valid/images
